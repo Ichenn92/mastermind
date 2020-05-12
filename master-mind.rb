@@ -1,23 +1,24 @@
 require 'pry'
-require 'colorize'
+require 'colorize' # for repl.it add the gem
 require 'io/console'
 require_relative './class/game'
 require_relative './class/player'
 require_relative './class/rules'
+require_relative './class/TextCheckModifier'
 
 def clear_console 
-  $stdout.write "#\e[2J" 
-  puts "\n"
+  print `clear`
 end
 
-# print "•"
-
+# --------------
+Rules.new()
+# --------------
 
 loop do
   continue = nil
 
   clear_console
-  Game.new()
+  games = Game.new()
   loop do
     print "Do you want to play again? [Y/n] : "
     continue = gets.chomp.downcase
