@@ -9,8 +9,8 @@ class Game
   @@ball = { red: " R ".on_red.bold, 
             blue: " B ".on_blue.bold, 
             green: " G ".on_green.bold, 
-            white: " W ".on_white.bold,
-            yellow: " Y ".on_yellow.bold,
+            white: " W ".black.on_white.bold,
+            yellow: " Y ".black.on_yellow.bold,
             cyan: " C ".black.on_cyan.bold,
             dark: " D ".bold,
             magenta: " M ".on_magenta.bold }
