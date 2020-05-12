@@ -3,10 +3,12 @@ require 'bundler/inline'
 gemfile true do
  source 'http://rubygems.org'
  gem 'colorize'
+ gem 'io-console'
 end
 
 require 'colorize' # for repl.it add the gem
 require 'io/console'
+require_relative './class/color'
 require_relative './class/game'
 require_relative './class/player'
 require_relative './class/rules'

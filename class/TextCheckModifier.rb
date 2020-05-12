@@ -44,8 +44,8 @@ module TextCheckModifier
     when 'w'
       return Game.ball[:white]
     when 'p'
-      return Game.ball[:pink]
-    when 'c'
+      return Game.ball[:yellow]
+    when 'y'
       return Game.ball[:cyan]
     when 'd'
       return Game.ball[:dark]
