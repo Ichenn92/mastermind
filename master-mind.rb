@@ -1,4 +1,10 @@
-require 'pry'
+require 'bundler/inline'
+
+gemfile true do
+ source 'http://rubygems.org'
+ gem 'colorize'
+end
+
 require 'colorize' # for repl.it add the gem
 require 'io/console'
 require_relative './class/game'
