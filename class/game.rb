@@ -62,7 +62,7 @@ class Game
     print_board_line
     print_separator
 
-    (1..@total_round).each do |round|
+    (1..@@total_round).each do |round|
       code_guess = @breaker.try_decode(round)
       code_guess_obj = code_guess.map{|letter| letter_to_ball(letter) }.join(" ")
       @@last_hint = check_hint(code_guess).join
