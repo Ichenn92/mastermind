@@ -15,6 +15,8 @@ module TextCheckModifier
         input = gets.chomp
       when "code"
         input = gets.chomp.downcase.split("")
+      when "yes or no"
+        input = gets.chomp.downcase
       else
         input = gets.chomp
       end
